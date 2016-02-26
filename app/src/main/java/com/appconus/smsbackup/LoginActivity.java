@@ -49,9 +49,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     protected void loadData() {
         String identity = AccountHelper.getUserIdentity(this);
-        edtEmail.setText(identity);
-        ActivityController.navigateToActivity(LoginActivity.this, MainActivity.class);
-        finish();
+//        edtEmail.setText(identity);
+        edtEmail.setText("loctra90@gmail.com");
+        edtPassword.setText("foo");
+//        ActivityController.navigateToActivity(LoginActivity.this, MainActivity.class);
+//        finish();
     }
 
     @Override
